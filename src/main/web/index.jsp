@@ -11,24 +11,24 @@
     <title>$Title$</title>
 </head>
 <body>
-<table>
-    <tr>
-        <td>account</td>
-        <td><input /></td>
-    </tr>
-    <tr>
-        <td>secretkey</td>
-        <td><input /></td>
-    </tr>
-    <tr align="center">
-        <td><button id="hh"  onclick="goLog()">登录</button></td>
-    </tr>
+<form action="${pageContext.request.contextPath}/succ" id="form6">
+    <table>
+        <tr>
+            <td>account</td>
+            <td><input /></td>
+        </tr>
+        <tr>
+            <td>secretkey</td>
+            <td><input /></td>
+        </tr>
+        <tr align="center">
+            <td><button type="submit">log</button></td>
+        </tr>
 
-</table>
+    </table>
+</form>
 </body>
 <script>
-    function goLog() {
-        window.open("log/succ");
-    }
+
 </script>
 </html>

@@ -12,9 +12,9 @@ import org.springframework.stereotype.Service;
 @Service("LogInfoServiece")
 public class UserLogInfoImpl implements UserLogInfo {
     @Autowired
-    UserLogInfo userLogInfo;
+    UserLogInfo logInfo;
     @Override
     public Iaccount getAccInfo(String account, String secretkey) {
-        return userLogInfo.getAccInfo(account,secretkey);
+        return logInfo.getAccInfo(account,secretkey);
     }
 }
