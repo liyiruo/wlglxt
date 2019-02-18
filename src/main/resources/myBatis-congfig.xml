@@ -5,6 +5,7 @@
 <configuration>
 <settings>
     <setting name="logImpl" value="LOG4J"/>
+    <setting name="autoMappingBehavior" value="FULL"/>
 </settings>
     <typeAliases>
         <package name="com.wlglxt.bean"></package>

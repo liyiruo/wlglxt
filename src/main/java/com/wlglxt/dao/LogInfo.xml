@@ -3,7 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.wlglxt.dao.LogInfo">
-    <select id="getAccInfo" resultType="com.wlglxt.bean.Iaccount">
-        select * from iaccount where account=#{account}and secretkey=#{secretkey}
+    <select id="getAccInfo" resultType="Iaccount" >
+        select * from iaccount where account=#{account}  and secretkey=#{secretkey}
     </select>
 </mapper>

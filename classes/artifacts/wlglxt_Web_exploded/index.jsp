@@ -8,18 +8,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>登录页</title>
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/succ" id="form6">
+<form action="${pageContext.request.contextPath}/succ" method="post" id="form6">
     <table>
         <tr>
             <td>account</td>
-            <td><input /></td>
+            <td ><input name="account" /></td>
         </tr>
         <tr>
             <td>secretkey</td>
-            <td><input /></td>
+            <td ><input name="secretkey"/></td>
         </tr>
         <tr align="center">
             <td><button type="submit">log</button></td>

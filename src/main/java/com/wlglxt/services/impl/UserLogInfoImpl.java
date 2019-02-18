@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 /**
  * Created by admin on 2019/2/17.
  */
-@Service("LogInfoServiece")
+@Service
 public class UserLogInfoImpl implements UserLogInfo {
     @Autowired
-    UserLogInfo logInfo;
+    LogInfo logInfo;
     @Override
     public Iaccount getAccInfo(String account, String secretkey) {
         return logInfo.getAccInfo(account,secretkey);
