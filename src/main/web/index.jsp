@@ -7,10 +7,28 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+</head>
+<body>
+<table>
+    <tr>
+        <td>account</td>
+        <td><input /></td>
+    </tr>
+    <tr>
+        <td>secretkey</td>
+        <td><input /></td>
+    </tr>
+    <tr align="center">
+        <td><button id="hh"  onclick="goLog()">登录</button></td>
+    </tr>
+
+</table>
+</body>
+<script>
+    function goLog() {
+        window.open("log/succ");
+    }
+</script>
 </html>

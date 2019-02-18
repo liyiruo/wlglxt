@@ -11,7 +11,10 @@
     </typeAliases>
 
 <mappers>
+<!--
     <package name="com.wlglxt.dao"/>
+-->
+    <mapper resource="com/wlglxt/dao/LogInfo.xml"/>
 </mappers>
 
 </configuration>

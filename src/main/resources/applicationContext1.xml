@@ -7,7 +7,7 @@
     <!--扫描services-->
 <context:component-scan base-package="com.wlglxt.services"></context:component-scan>
     <!--引用数据源-->
-    <context:property-placeholder location="classpath:datatbase.properties"></context:property-placeholder>
+    <context:property-placeholder location="classpath:datatbase1.properties"></context:property-placeholder>
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
         <property name="driverClassName" value="${jdbc.driver}"></property>
         <property name="url" value="${jdbc.url}"></property>
@@ -16,8 +16,8 @@
     </bean>
     <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
         <property name="dataSource" ref="dataSource"></property>
-        <property name="configLocation" value="classpath:myBatis-congfig.xml"></property>
-        <property name="plugins">
+        <property name="configLocation" value="classpath:myBatis-congfig1.xml"></property>
+<!--        <property name="plugins">
             <array>
                 <bean class="com.github.pagehelper.PageInterceptor">
                     <property name="properties">
@@ -27,7 +27,7 @@
                     </property>
                 </bean>
             </array>
-        </property>
+        </property>-->
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.wlglxt.dao"></property>
